@@ -1,0 +1,150 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --dark-cyan: hsl(179, 60%, 38%);
+    --light-cyan: hsl(179, 55%, 54%);
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--light-gray);
+}
+
+.main {
+    height: 900px;
+    width: 350px;
+    margin: 0 auto;
+
+}
+
+.ad {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.main__title {
+    color: var(--cyan);
+    margin: 2rem;
+}
+
+.main__promo {
+    color: var(--bright-yellow);
+    margin: 2rem;
+
+}
+
+.access {
+    color: var(--grayish-blue);
+    line-height: 2;
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+.subs {
+    background-color: var(--dark-cyan);
+    padding: 1rem;
+
+}
+
+.subs__type {
+    margin: 1rem 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.price {
+    font-size: 3rem;
+    margin: 1rem;
+    color: white;
+
+}
+
+span {
+    color: var(--light-cyan);
+    font-size: 1rem;
+
+
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    text-decoration: none;
+    background-color: var(--bright-yellow);
+    height: 3rem;
+    width: 10rem;
+    color: white;
+    width: 80%;
+    height: 4rem;
+    border-radius: .5rem;
+    line-height: 3.8;
+
+
+}
+
+.brand {
+    background-color: var(--light-cyan);
+    padding: 1rem;
+    color: white;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.reasons,
+.lines {
+    margin: 1rem;
+}
+
+.reasons {
+    margin-bottom: 2rem;
+}
+
+.lines {
+    color: rgb(177, 229, 218);
+}
+
+@media (orientation:landscape) {
+    .main {
+        margin: 2rem;
+    }
+
+    .ad {
+
+        width: 700px;
+        margin: 0 auto;
+
+
+    }
+
+    .item {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 350px 350px;
+
+
+    }
+
+    .subs {
+        border-radius: 0 0 0 1rem;
+    }
+
+    .brand {
+        border-radius: 0 0 1rem 0;
+    }
+
+
+}
